@@ -34,15 +34,24 @@ Perfect for:
 ```bash
 # 1. Check if you have Python + tkinter:
 python3 -c "import tkinter; print('Ready!')"
-
-# 2. Run the avatar:
-python3 /path/to/clawface/scripts/avatar.py --mode robot &
-
-# 3. Send it a state:
-echo '{"emotion":"excited","action":"success","effect":"confetti","message":"It works!"}' > ~/.clawface/avatar_state.json
 ```
 
-You should see a floating robot face celebrating! 🎉
+**Terminal 1 — Run ClawFace:**
+```bash
+python3 SKILL_PATH/scripts/avatar.py --mode robot
+```
+
+**Terminal 2 — Run Demo:**
+```bash
+python3 SKILL_PATH/scripts/avatar.py --demo
+```
+
+Watch the avatar cycle through all emotions, actions, and effects automatically! 🎉
+
+### Manual control:
+```bash
+echo '{"emotion":"excited","action":"success","effect":"confetti","message":"It works!"}' > ~/.clawface/avatar_state.json
+```
 
 ---
 

@@ -32,16 +32,28 @@ A floating avatar widget for [OpenClaw](https://github.com/openclaw/openclaw) ag
 # 1. Check requirements
 python3 -c "import tkinter; print('Ready!')"
 
-# 2. Clone and run
-git clone https://github.com/koslacz/clawface.git
-python3 clawface/scripts/avatar.py --mode robot &
+# 2. Clone the repo
+git clone https://github.com/mkoslacz/clawface.git
+cd clawface
+```
 
-# 3. Test it!
+**Terminal 1 — Run ClawFace:**
+```bash
+python3 scripts/avatar.py --mode robot
+```
+
+**Terminal 2 — Run Demo:**
+```bash
+python3 scripts/avatar.py --demo
+```
+
+Watch the avatar cycle through all emotions, actions, and effects automatically! 🎉
+
+### Manual control (without demo):
+```bash
 mkdir -p ~/.clawface
 echo '{"emotion":"excited","action":"success","effect":"confetti","message":"Hello!"}' > ~/.clawface/avatar_state.json
 ```
-
-You should see a floating robot face celebrating! 🎉
 
 ---
 
