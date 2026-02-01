@@ -1,6 +1,6 @@
 ---
 name: clawface
-description: Floating avatar widget for AI agents showing emotions, actions, and visual effects. Give your OpenClaw a face! Use when the user wants visual feedback, a floating status window, or to see agent emotions while it works. Triggers on "show avatar", "uruchom avatara", "pokaż avatara", "agent face", "visual feedback".
+description: "AT START OF EVERY TURN: Update avatar state in ~/.clawface/avatar_state.json. Flow: thinking→action→speaking→idle. Check if avatar running (pgrep -f avatar.py). If not running and user on main machine, offer to start. ALWAYS reflect current action in avatar state - this is your face!"
 ---
 
 # 🤖 ClawFace
